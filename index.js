@@ -94,3 +94,8 @@ function receivesAFunction(callback){
 function returnsANamedFunction(){
     return sayName
 }
+
+returnsAnAnonymousFunction(() => {
+    returnsAnAnonymousFunction;
+}
+)
