@@ -47,13 +47,13 @@
 //     postRunActivity();
 // }
 
-// exerciseRoutine(function (){
-//     console.log("Stretch! Work that core!");
-// });
+exerciseRoutine(function (){
+    console.log("Stretch! Work that core!");
+});
 
-// exerciseRoutine(() => {
-//     console.log("Stretch! Work that core!");
-// })
+exerciseRoutine(() => {
+    console.log("Stretch! Work that core!");
+})
 
 // exerciseRoutine(() => console.log("Stretch! Work that core!"));
 
@@ -95,7 +95,9 @@ function returnsANamedFunction(){
     return sayName
 }
 
-returnsAnAnonymousFunction(() => {
-    returnsAnAnonymousFunction;
+function returnsAnAnonymousFunction(){
+    return function () {
+
+    }
 }
-)
+
